@@ -14,17 +14,6 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories.streamlit import StreamlitChatMessageHistory
 
-
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain.vectorstores import Chroma
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains import create_history_aware_retriever, create_retrieval_chain
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_community.chat_message_histories.streamlit import StreamlitChatMessageHistory
-
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3']=sys.modules.pop('pysqlite3')
