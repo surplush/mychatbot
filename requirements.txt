@@ -1,0 +1,9 @@
+streamlit
+langhain
+langchain_community
+langchain_openai
+langhain-core
+langchain-chroma
+pysqlite3-binary
+pypdf
+langchain-text-splitters
